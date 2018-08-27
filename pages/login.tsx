@@ -1,7 +1,7 @@
 import * as React from "react";
 import styled from 'styled-components';
 import { InputEmail, InputPassword } from '../Components'
-
+import Router from 'next/router'
 
 // Amplify AWS Congnito
 import Amplify, { Auth } from 'aws-amplify';
@@ -28,6 +28,16 @@ class Login extends React.Component<Props,State> {
       email:'',
       password:'',
     }
+  }
+
+  componentDidMount() {
+    // if user is logged in! go to the first page
+    Auth.currentAuthenticatedUser()
+    .then(()=>{
+      Router.push('/')
+    }).catch(()=>{
+      // do nothing
+    })
   }
 
   private _handleSubmit = (event) => {
