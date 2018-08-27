@@ -1,0 +1,20 @@
+{
+  "name": "nextjs-typescript-styled-component-boilerplate",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "next": "^6.1.1",
+    "@zeit/next-typescript": "^1.1.0",
+    "babel-plugin-styled-components": "^1.5.1",
+    "isomorphic-unfetch": "^2.1.1",
+    "styled-components": "^3.4.4",
+    "@types/react": "^16.4.11",
+    "@types/react-dom": "^16.0.7"
+  }
+}
