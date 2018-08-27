@@ -1,4 +1,1 @@
-# Boilerplate CHE Frontend
-- Nextjs
-- Typescript
-- Styled Component
+# Boilerplate JavaScript/TypeScript React Next Js Application with Congito AWS
